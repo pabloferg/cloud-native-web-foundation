@@ -6,7 +6,8 @@ name: Deploy the web service
 on:
   push:
     branches:
-     - master 
+     - master
+     - add-deployment-github-action
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 
