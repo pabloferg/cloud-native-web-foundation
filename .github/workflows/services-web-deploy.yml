@@ -1,0 +1,30 @@
+name: Deploy the web service
+
+# This instructs GitHub to run this workflow for commits
+# to the ​master branch, such as when a pull request
+# is merged into the ​master branch.
+on:
+  push:
+    branches:
+     - master
+    paths:
+      - 'services/web/**'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
+# We start with a predefined action to check out the source code,
+# install all dependencies, bootstrap the services in ​./services/*​and lastly,
+# run the web service's d​eploy​ script.
+jobs:
+       deploy:
+         runs-on: ubuntu-latest
+         steps:
+           - uses: actions/checkout@v2
+           - name: Install dependencies
+             run: npm install
+           - name: Bootstrap all services
+             run: npm run bootstrap
+           - name: Deploy the web service
+             run: npm run deploy --prefix services/web
+             env:
+               FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
