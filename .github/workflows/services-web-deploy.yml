@@ -7,7 +7,8 @@ on:
   push:
     branches:
      - master
-     - add-deployment-github-action
+    paths:
+      - 'services/web/**'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 
