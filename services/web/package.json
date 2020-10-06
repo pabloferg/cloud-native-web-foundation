@@ -1,20 +1,12 @@
 {
-  "name":  "cloud-native-web-development",
-  "description": "web application",
+  "name": "TODO",
+  "description": "TODO",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "sapper export ./firebase/public --legacy",
-    "start": "node __sapper__/build",
-    "cy:run": "cypress run",
-    "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run",
-    "postinstall": "npm install --prefix firebase",
-    "deploy:firebase": "npm run deploy --prefix firebase",
-    "deploy:clean": "rm -fr __sapper__ ./firebase/public",
-    "deploy": "run-s deploy:clean export deploy:firebase"
-
+    "export": "sapper export --legacy",
+    "start": "node __sapper__/build"
   },
   "dependencies": {
     "compression": "^1.7.1",
@@ -22,7 +14,6 @@
     "sirv": "^1.0.0"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
     "sapper": "^0.28.0",
     "svelte": "^3.17.3",
     "@babel/core": "^7.0.0",

@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "firebase:login": "firebase login --no-localhost",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "dev": "firebase serve"
   },
   "author": "Pablo Fernandez, pablofernandez.dev",
   "license": "ISC",
   "devDependencies": {
-    "firebase-tools": "^8.9.2"
+    "firebase-tools": "^8.12.0"
   }
 }
