@@ -12,6 +12,6 @@
   "author": "Pablo Fernandez, pablofernandez.dev",
   "license": "ISC",
   "devDependencies": {
-    "firebase-tools": "^8.9.2"
+    "firebase-tools": "^8.12.0"
   }
 }
