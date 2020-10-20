@@ -3,6 +3,7 @@
   "description": "cloud-native-web-development",
   "version": "0.0.1",
   "scripts": {
+    "postinstall": "npm install --prefix firebase",
     "dev": "run-p dev:*",
     "dev:firebase": "npm run dev --prefix firebase",
     "dev:sapper": "sapper dev",
@@ -33,6 +34,7 @@
     "rollup-plugin-svelte": "^6.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "sapper": "^0.28.0",
-    "svelte": "^3.17.3"
+    "svelte": "^3.17.3",
+    "firebase-admin": "^8.12.1"
   }
 }
