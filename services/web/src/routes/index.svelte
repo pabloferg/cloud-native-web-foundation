@@ -33,15 +33,15 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>te quiero</title>
 </svelte:head>
 
+<h1>Hola Woodchuck!</h1>
 
-<h1>Hello Pablo!</h1>
 
 <figure>
-	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
+	<img alt='woodchuck' src='woodchuck.jpg'>
+	<figcaption>te quiero guapo</figcaption>
 </figure>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<p><strong>arriba abajo derecha izquierda</strong></p>
