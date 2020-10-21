@@ -36,7 +36,7 @@
 	<title>te quiero</title>
 </svelte:head>
 
-<h1>Hola Woodchuck!</h1>
+<h1>Hola Pablo!</h1>
 
 
 <figure>
@@ -44,4 +44,4 @@
 	<figcaption>te quiero guapo</figcaption>
 </figure>
 
-<p><strong>arriba abajo derecha izquierda</strong></p>
+<p><strong>!!!!!!!</strong></p>
