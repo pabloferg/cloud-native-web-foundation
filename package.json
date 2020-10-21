@@ -19,6 +19,7 @@
   "author": "Mike, @mikenikles",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^5.4.0",
     "git-config-path": "^2.0.0",
     "husky": "^4.2.1",
     "lerna": "^3.20.2",
