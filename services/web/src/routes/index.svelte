@@ -36,7 +36,7 @@
 	<title>te quiero</title>
 </svelte:head>
 
-<h1>Hola Pablo!</h1>
+<h1>Hola Isabel!</h1>
 
 
 <figure>
