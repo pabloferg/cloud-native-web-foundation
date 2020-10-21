@@ -38,6 +38,7 @@
 <h1 class='text-red-800'>Hola mama!</h1>
 
 
+
 <figure>
 	<img alt='woodchuck' src='woodchuck.jpg'>
 	<figcaption>te quiero guapo</figcaption>
