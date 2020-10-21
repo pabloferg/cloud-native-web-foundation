@@ -6,7 +6,6 @@
 
 	h1 {
 		font-size: 2.8em;
-		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
 	}
@@ -36,7 +35,7 @@
 	<title>te quiero</title>
 </svelte:head>
 
-<h1>Hola Isabel!</h1>
+<h1 class='text-red-800'>Hola mama!</h1>
 
 
 <figure>
