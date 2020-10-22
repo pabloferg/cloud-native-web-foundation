@@ -1,5 +1,6 @@
 <script>
   import ContactCard from "../components/contact-card.svelte";
+  import TestCard from "../components/test-card.svelte";
   import FeatureToggle from "../components/feature-toggle.svelte";
   import { FEATURE_TOGGLES } from "../feature-toggles";
 
@@ -27,3 +28,8 @@
 </FeatureToggle>
 
 <ContactCard {...erinLindford} />
+<TestCard/>
+<TestCard/>
+<TestCard/>
+<TestCard/>
+<TestCard/>
