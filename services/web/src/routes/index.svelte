@@ -35,7 +35,7 @@
 	<title>te quiero</title>
 </svelte:head>
 
-<h1 class='text-red-800'>Hola mama!</h1>
+<h1>test!</h1>
 
 
 
