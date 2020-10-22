@@ -8,7 +8,7 @@
     "dev:firebase": "npm run dev --prefix firebase",
     "dev:sapper": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "NODE_ENV=production sapper export ./firebase/public --legacy",
+    "export": "NODE_ENV=production sapper export ./firebase/public --legacy --entry /admin",
     "start": "node __sapper__/build",
     "deploy:firebase": "npm run deploy --prefix firebase",
     "deploy:clean": "rm -fr __sapper__ ./firebase/public",
@@ -42,6 +42,5 @@
     "svelte": "^3.17.3",
     "svelte-preprocess": "^4.5.1",
     "tailwindcss": "^1.9.5"
-
   }
 }
