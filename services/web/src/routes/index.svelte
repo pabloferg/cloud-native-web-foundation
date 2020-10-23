@@ -35,12 +35,12 @@
 	<title>te quiero</title>
 </svelte:head>
 
-<h1>test!</h1>
+<h1 class=' text-red-700'>Valencia!</h1>
 
 
 
 <figure>
-	<img alt='woodchuck' src='woodchuck.jpg'>
+	<img class='items-center' alt='woodchuck' src='woodchuck.jpg'>
 	<figcaption>te quiero guapo</figcaption>
 </figure>
 
