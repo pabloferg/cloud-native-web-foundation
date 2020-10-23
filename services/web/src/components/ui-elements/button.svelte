@@ -1,4 +1,3 @@
-
 <style>
   .disabled {
     @apply opacity-50;
