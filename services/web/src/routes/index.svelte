@@ -32,16 +32,16 @@
 </style>
 
 <svelte:head>
-	<title>te quiero</title>
+	<title>pablo.dev</title>
 </svelte:head>
 
-<h1 class=' text-red-700'>Valencia!</h1>
+<h1 class=' text-red-700'>Last change!</h1>
 
 
 
 <figure>
 	<img class='items-center' alt='woodchuck' src='woodchuck.jpg'>
-	<figcaption>te quiero guapo</figcaption>
+	<figcaption>this is a test</figcaption>
 </figure>
 
 <p><strong>!!!!!!!</strong></p>
