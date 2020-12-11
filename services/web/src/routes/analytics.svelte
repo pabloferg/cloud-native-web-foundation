@@ -1,5 +1,9 @@
 <script>
 
+    let current = 'home';
+
+
+
 </script>
 
 
@@ -13,10 +17,7 @@
             <nav class="max-w-5xl mx-auto px-6 flex items-center justify-between pt-4">
                 <div class="flex items-center space-x-6">
                     <a href=" ">
-                        <svg version="1.1" id="triangle-15" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6" viewBox="0 0 15 15">
-                            <path id="path21090-9" d="M7.5385,2&#xA;&#x9;C7.2437,2,7.0502,2.1772,6.9231,2.3846l-5.8462,9.5385C1,12,1,12.1538,1,12.3077C1,12.8462,1.3846,13,1.6923,13h11.6154&#xA;&#x9;C13.6923,13,14,12.8462,14,12.3077c0-0.1538,0-0.2308-0.0769-0.3846L8.1538,2.3846C8.028,2.1765,7.7882,2,7.5385,2z"/>
-                        </svg>
+                        <img class="h-6" alt='diamond logo' src='diamond.svg'>
                     </a>
 
                 <span class="inline-flex items-center space-x-2  text-sm leading-5 font-medium">
@@ -63,26 +64,31 @@
             </nav>
             <div class="max-w-5xl mx-auto px-6">
                 <nav class="-mb-px flex space-x-5 text-sm leading-5">
-                    <a class="border-b-2 border-black px-0.5 py-3 text-black" href=" ">
-                        Overview
+
+
+                    <a class="{current === 'home' ? "border-b-2 border-black px-0.5 py-3 text-black" : "border-b-2 border-transparent px-0.5 py-3 text-gray-500 hover:text-black transition ease-in-out duration-150"}"
+                        on:click="{() => current = 'home'}"
+                        href="analytics"
+                    >Home
                     </a>
-                    <a class="border-b-2 border-transparent px-0.5 py-3 text-gray-500 hover:text-black transition ease-in-out duration-150" href=" ">
-                        Demand
+
+                    <a class="{current === 'projects' ? "border-b-2 border-black px-0.5 py-3 text-black" : "border-b-2 border-transparent px-0.5 py-3 text-gray-500 hover:text-black transition ease-in-out duration-150"}"
+                        on:click="{() => current = 'projects'}"
+                        href="analytics"
+                    >Projects
                     </a>
-                    <a class="border-b-2 border-transparent px-0.5 py-3 text-gray-500 hover:text-black transition ease-in-out duration-150" href=" ">
-                        Capacity
+
+                    <a class="{current === 'contact' ? "border-b-2 border-black px-0.5 py-3 text-black" : "border-b-2 border-transparent px-0.5 py-3 text-gray-500 hover:text-black transition ease-in-out duration-150"}"
+                        on:click="{() => current = 'contact'}"
+                        href="analytics"
+                    >Contact
                     </a>
-                    <a class="border-b-2 border-transparent px-0.5 py-3 text-gray-500 hover:text-black transition ease-in-out duration-150" href=" ">
-                        Market
-                    </a>
-                    <a class="border-b-2 border-transparent px-0.5 py-3 text-gray-500 hover:text-black transition ease-in-out duration-150" href=" ">
-                        Pricing
-                    </a>
+
                 </nav>
             </div>
 
         </header>
-        <div class="max-w-5xl mx-auto px-6 py-10">
+        <div class="max-w-5xl mx-auto px-6 pt-8 pb-32">
             <div class="flex space-x-8">
                 <div>
                      <img
@@ -90,11 +96,16 @@
                             src="https://avatars3.githubusercontent.com/u/51671788?s=400&u=90e5fbc7579aef41298353e0c5aabd6aa394f2b9&v=4"
                             alt="avatar">
                 </div>
-                <div class="space-y-6">
-                    <h1 class="text-4xl leading-10 font-bold">Pablo Fernandez</h1>
+                <div class="flex flex-col justify-end space-y-4 mb-0">
+                    <div class="flex items-center space-x-3 pb-0">
+                        <h1 class="text-4xl leading-10 font-bold">Pablo Fernandez</h1>
+                        <span class="mt-1 inline-flex rounded-full bg-gray-50 border border-gray-200 px-2 text-xs leading-3 font-medium text-black uppercase tracking-wide">
+                            Data Scientist
+                        </span>
+                    </div>
                     <div>
                         <dl>
-                            <dt class="text-xs leading-5 font-medium text-gray-500 uppercase tracking-wide">Git integration</dt>
+                            <dt class="text-xs leading-5 font-medium text-gray-500 uppercase tracking-wide">Company</dt>
                             
                             <dd class="flex items-center space-x-2 text-sm leading-5 font-medium">
                                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"
@@ -111,8 +122,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
