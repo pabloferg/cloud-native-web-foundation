@@ -1,2 +1,2 @@
-import * as posts from "./posts";
-export { posts };
+import * as onCreate from "./on-create";
+export { onCreate };
