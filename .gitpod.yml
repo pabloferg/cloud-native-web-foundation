@@ -2,9 +2,7 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: npm install
-    command: |
-      export CLIENT_URL="$(gp url 35729)/livereload.js?snipver=1&port=443"
-      npm run bootstrap
+    command: npm run bootstrap
 ports:
   - port: 5900
     onOpen: ignore
