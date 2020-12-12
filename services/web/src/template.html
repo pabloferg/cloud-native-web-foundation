@@ -50,6 +50,22 @@
     <script>
       var firebaseAuthUi = new firebaseui.auth.AuthUI(firebase.auth());
       var db = firebase.firestore();
+
+      if (location.hostname === "localhost") {
+        // Used for end-to-end tests
+        db.settings({
+          host: "localhost:8080",
+          ssl: false,
+          experimentalForceLongPolling: true,
+        });
+      } else if (location.hostname.endsWith("gitpod.io")) {
+        // Used for testing in dev
+        db.settings({
+          host: location.hostname.replace(/\d*-/, "8080-"),
+          ssl: true,
+          experimentalForceLongPolling: true,
+        });
+      }
     </script>
 
     <!-- Sapper creates a <script> tag containing `src/client.js`
