@@ -8,5 +8,8 @@ ports:
     onOpen: ignore
   - port: 6080
     onOpen: ignore
+  - port: 8080
+    onOpen: ignore
+    visibility: public
   - port: 10000
     onOpen: ignore
