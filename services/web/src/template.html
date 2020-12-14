@@ -32,14 +32,14 @@
     <div id="sapper">%sapper.html%</div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.2.0/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
-    <script src="/__/firebase/7.14.1/firebase-remote-config.js"></script>
-    <script src="/__/firebase/7.14.1/firebase-auth.js"></script>
-    <script src="/__/firebase/7.14.1/firebase-firestore.js"></script>
+    <script src="/__/firebase/8.2.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/8.2.0/firebase-remote-config.js"></script>
+    <script src="/__/firebase/8.2.0/firebase-auth.js"></script>
+    <script src="/__/firebase/8.2.0/firebase-firestore.js"></script>
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
@@ -53,18 +53,21 @@
 
       if (location.hostname === "localhost") {
         // Used for end-to-end tests
-        db.settings({
-          host: "localhost:8080",
-          ssl: false,
-          experimentalForceLongPolling: true,
-        });
+        db.useEmulator("localhost", 8080);
+        // db.settings({
+        //   host: "localhost:8080",
+        //   ssl: false,
+        //   experimentalForceLongPolling: true,
+        // });
       } else if (location.hostname.endsWith("gitpod.io")) {
         // Used for testing in dev
-        db.settings({
-          host: location.hostname.replace(/\d*-/, "8080-"),
-          ssl: true,
-          experimentalForceLongPolling: true,
-        });
+        //db.useEmulator(location.hostname.replace(/\d*-/, "8080-"), 80);
+        db.useEmulator(location.hostname.replace(/\d*-/, "8080-"), 80);
+        // db.settings({
+        //   host: location.hostname.replace(/\d*-/, "8080-"),
+        //   ssl: true,
+        //   experimentalForceLongPolling: true,
+        // });
       }
     </script>
 
