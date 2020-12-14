@@ -61,6 +61,7 @@
         // });
       } else if (location.hostname.endsWith("gitpod.io")) {
         // Used for testing in dev
+        //db.useEmulator(location.hostname.replace(/\d*-/, "8080-"), 80);
         db.useEmulator(location.hostname.replace(/\d*-/, "8080-"), 80);
         // db.settings({
         //   host: location.hostname.replace(/\d*-/, "8080-"),
